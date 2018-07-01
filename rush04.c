@@ -12,45 +12,41 @@
 
 #include "ft_putchar.c"
 
-void	print_column(int x, char a, char b, char c)
+void    print_column(int x, char a, char b, char c)
 {
-	int i;
+    int i;
 
-	i = 1;
-	if (i == 1)
-	{
-		ft_putchar(a);
-		i++;
-	}
-	while (i < x)
-	{
-		ft_putchar(b);
-		i++;
-	}
-	if (i == x)
-	{
-		ft_putchar(c);
-	}
-	ft_putchar('\n');
+    i = 1;
+    if (i == 1)
+    {
+        ft_putchar(a);
+        i++;
+    }
+    while (i < x)
+    {
+        ft_putchar(b);
+        i++;
+    }
+    if (i == x)
+        ft_putchar(c);
+    ft_putchar('\n');
 }
 
-void	rush(int x, int y)
+void    rush(int x, int y)
 {
-	int j;
+    int j;
 
-	j = 1;
-	if (j == 1)
-	{
-		print_column(x, 'A', 'B', 'C');
-		j++;
-	}
-	while (j < y)
-	{
-		print_column(x, 'B', ' ', 'B');
-		j++;
-	}
-	if (j == y)	
-	{
-		print_column(x, 'C', 'B', 'A');
-	}
+    j = 1;
+    if (j == 1)
+    {
+        print_column(x, 'A', 'B', 'C');
+        j++;
+    }
+    while (j < y)
+    {
+        print_column(x, 'B', ' ', 'B');
+        j++;
+    }
+    if (j == y)	
+        print_column(x, 'C', 'B', 'A');
 }

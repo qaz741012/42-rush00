@@ -12,8 +12,8 @@
 
 #include "rush04.c"
 
-int	main(void)
+int    main(void)
 {
-	rush(5, 5);
-	return (0);
+    rush(5, 5);
+    return (0);
 }
